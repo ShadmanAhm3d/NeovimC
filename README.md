@@ -12,6 +12,10 @@ A simple easy to configure Neovim config.
 - Telescope
 - Variety of colorschemes
 
+## ScreenShots
+
+ ![](images/1.png)
+
 
 ## Installation
 
