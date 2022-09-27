@@ -15,6 +15,10 @@ A simple easy to configure Neovim config.
 ## ScreenShots
 
  ![](images/1.png)
+ ![](images/2.png)
+ ![](images/3.png)
+ ![](images/4.png)
+ ![](images/5.png)
 
 
 ## Installation
