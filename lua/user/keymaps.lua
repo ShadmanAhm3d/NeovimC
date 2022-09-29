@@ -85,3 +85,27 @@ keymap("n", "<C-w>", ":Bdelete<CR>",opts)
 
 keymap("n", "<C-s>", ":w<CR>",opts)
 
+--lsp diagnostics keymaps 
+
+
+vim.keymap.set("n", "K", "<Cmd>lua vim.lsp.buf.hover()<CR>", opts)
+
+  vim.keymap.set("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", opts)
+  vim.keymap.set("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
+
+  vim.keymap.set( "n", "gi", "<cmd>lua vim.lsp.buf.implementation()<cr>", opts)
+  vim.keymap.set( "n", "<c-k>", "<cmd>lua vim.lsp.buf.signature_help()<cr>", opts)
+  -- vim.keymap.set( "n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<cr>", opts)
+  vim.keymap.set( "n", "gr", "<cmd>lua vim.lsp.buf.references()<cr>", opts)
+  -- vim.keymap.set( "n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<cr>", opts)
+  -- vim.keymap.set( "n", "<leader>f", "<cmd>lua vim.diagnostic.open_float()<cr>", opts)
+  vim.keymap.set( "n", "[d", '<cmd>lua vim.diagnostic.goto_prev({ border = "rounded" })<cr>', opts)
+  vim.keymap.set(
+    "n",
+    "gl",
+    '<cmd>lua vim.lsp.diagnostic.show_line_diagnostics({ border = "rounded" })<cr>',
+    opts
+  )
+  vim.keymap.set( "n", "<F2>", '<cmd>lua vim.diagnostic.goto_next({ border = "rounded" })<cr>', opts)
+  vim.keymap.set( "n", "<leader>q", "<cmd>lua vim.diagnostic.setloclist()<cr>", opts)
+
