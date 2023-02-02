@@ -70,14 +70,21 @@ keymap("n", "<leader>ff", ":Telescope find_files<CR>", opts)
 keymap("n", "<leader>fl", ":Telescope live_grep<CR>", opts)
 keymap("n", "<leader>fo", ":Telescope oldfiles<CR>", opts)
 keymap("n", "<C-p>" , ":Telescope find_files<CR>", opts)
+<<<<<<< HEAD:lua/shaddy/keymaps.lua
 --CODE RUNNER 
+=======
+>>>>>>> main:lua/user/keymaps.lua
 keymap("n", "<leader>r" , ":term g++ %:p && ./a.out<CR>", opts) --cpp run
 -- Nvimtresse
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
 --Bufferline
 
+<<<<<<< HEAD:lua/shaddy/keymaps.lua
 keymap("n", "<A-w>", ":bdelete<CR>",opts)
+=======
+keymap("n", "<A-w>", ":Bdelete<CR>",opts)
+>>>>>>> main:lua/user/keymaps.lua
 
 keymap("n", "<C-s>", ":w<CR>",opts)
 
